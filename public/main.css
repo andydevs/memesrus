@@ -1,0 +1,257 @@
+* { font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+body {
+    margin: 0pt;
+}
+
+img {
+    max-width: 100%;
+}
+
+.meme {
+    margin: 20pt;
+    display: block;
+    box-shadow: 0px 6px 23px -7px rgba(0,0,0,0.42);
+    border: 1px solid #e0e0e0;
+    border-radius: 2pt;
+}
+
+.meme-body {
+    padding: 5pt 10pt;
+    display: block;
+}
+
+.meme-body .info {
+    display: flex;
+    flex-direction: row;
+    margin: 4pt 0pt;
+}
+
+.meme-info-unit { margin: 4pt 0pt; }
+.meme-price { font-weight: bold; }
+
+.flex-1 { flex: 1; }
+.flex-0 { flex: 0; }
+
+.actions {
+    margin: 10pt 0pt;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.actions .btn {
+    flex: 1;
+}
+.actions .btn-form {
+    flex: 1;
+}
+
+.thumbnail {
+    width: 100px;
+}
+
+.btn-form {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn-form .btn {
+    flex: 1;
+}
+
+.btn {
+    margin: 4pt;
+    padding: 4pt;
+    font-size: 11pt;
+    text-align: center;
+ 
+    text-decoration: none;
+    color: black;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4pt;
+}
+
+.btn-primary {
+    background-color: green;
+    border-color: darkgreen;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dd0000;
+    color: white;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 10pt;
+    background-color: green;
+    color: white;
+    box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.42);
+}
+
+.heading {
+    flex: 1;
+}
+
+.title {
+    text-decoration: none;
+    font-size: 20pt;
+    color: inherit;
+}
+
+.cart {
+    flex: 0 auto;
+}
+
+.cart-link {
+    text-decoration: none;
+    font-size: 14pt;
+    color: black;
+    background-color: white;
+    padding: 4pt;
+    border-radius: 4pt;
+}
+.cart-size-badge {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 4pt;
+    padding: 1pt 4pt;
+}
+
+.cart-empty-notice {
+    text-align: center;
+}
+.cart-empty-notice-image {
+    width: 600px;
+}
+.cart-empty-notice-text {
+    font-size: 20pt;
+}
+.my-cart {
+    margin: 10pt;
+}
+.cart-items {
+    margin: 10pt 0pt;
+    width: 100%;
+}
+.cart-items td, .cart-items th {
+    text-align: center;
+}
+
+.index {
+    display: block;
+}
+
+.list-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+@media screen and (min-width: 800px) {
+    .list-layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+.filters {
+    padding: 20pt;
+}
+
+.filters .filter {
+    text-decoration: none;
+    color: black;
+    background-color: #eee;
+    padding: 5pt 10pt;
+    border-radius: 4pt;
+}
+
+.filters .active {
+    background-color: green;
+    color: white;
+}
+
+#messages {
+    margin: 20pt;
+    display: block;
+}
+
+#messages .message {
+    margin: 5pt 0pt;
+    padding: 10pt;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid;
+    border-color: #aaa;
+    background-color: #ccc;
+    border-radius: 8pt;
+}
+
+#messages .message-error {
+    border-color: #8a0000;
+    background-color: #cc0000 !important;
+    color: white;
+}
+
+#messages .message-success {
+    border-color: #00611d;
+    background-color: #008628 !important;
+    color: white;
+}
+
+#messages .message .text {
+    margin: 0pt;
+    flex: 1;
+}
+
+#messages .message .close {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 5pt;
+}
+
+.centered {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+.centered-container {
+    text-align: center;
+    max-width: 75%;
+}
+
+.session-id {
+    margin: 8pt auto;
+    display: block;
+    font-size: 8pt;
+    background-color: #ccc;
+    border-radius: 4px;
+    padding: 4px;
+    width: fit-content;
+}
+
+.fixed-width {
+    display: inline-block;
+    width: 200px;
+    overflow: hidden;
+}

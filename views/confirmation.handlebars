@@ -1,0 +1,30 @@
+<div class="order-confirmation">
+    <h1>Order Confirmation</h1>
+    <p>Your order id:</p>
+    <p class="session-id">
+        <span class="fixed-width">{{ session_id }}</span>
+    </p>
+    <table class="cart-items">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each checkout_memes}}
+                <tr>
+                    <td>{{ name }}</td>
+                    <td><img class='thumbnail' src="{{ fileurl }}" alt="{{ name }}"></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div class="actions">
+        <form class="btn-form" action="/download" method="post">
+            <input type="hidden" name="checout_id" value="{{ session_id }}">
+            <button type="submit" class="btn btn-primary">Get Yer Memes</button>
+        </form>
+        <a class="btn btn-secondary" href="/">Back To Shopping</a>
+    </div>
+</div>

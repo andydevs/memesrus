@@ -1,0 +1,32 @@
+<main class="index">
+    <div class="list-layout">
+        {{#each memes}}
+            <div class="meme-container">
+                <div class="meme">
+                    <img class="image" src="{{ fileurl }}" alt="{{ name }}">
+                    <div class="meme-body">
+                        <div class="info">
+                            <div class="flex-1">
+                                <h2 class="meme-info-unit meme-title">{{ name }}</h3>
+                                <p class="meme-info-unit meme-category">Category: {{ category }}</p>
+                            </div>
+                            <div class="flex-0">
+                                <p class="meme-info-unit meme-price">{{ usd price }}</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <form class="btn-form" action="/add-to-cart" method="POST">
+                                <input type="hidden" name="_id" value="{{ _id }}">
+                                <button 
+                                    type="submit" 
+                                    class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</main>

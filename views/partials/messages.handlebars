@@ -1,0 +1,30 @@
+<div id="messages">
+    {{#each errors}}
+        <div class="message message-error">
+            <p class="text">{{this}}</p>
+            <button class="close">Close</button>
+        </div>
+    {{/each}}
+
+    {{#each successes}}
+        <div class="message message-success">
+            <p class="text">{{this}}</p>
+            <button class="close">Close</button>
+        </div>
+    {{/each}}
+
+    {{!-- <div class="message">
+        <p class="text">This is a closeable message</p>
+        <button class="close">Close</button>
+    </div>
+
+    <div class="message message-error">
+        <p class="text">This is a closeable error message</p>
+        <button class="close">Close</button>
+    </div>
+
+    <div class="message message-success">
+        <p class="text">This is a closeable success message</p>
+        <button class="close">Close</button>
+    </div> --}}
+</div>

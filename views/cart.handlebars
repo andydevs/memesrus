@@ -1,0 +1,38 @@
+<main class="my-cart">
+    {{#if items}}
+        <table class="cart-items">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each items}}
+                    <tr>
+                        <td><img class='thumbnail' src="{{ fileurl }}" alt="{{ name }}"></td>
+                        <td>{{ name }}</td>
+                        <td>{{ usd price }}</td>
+                        <td>
+                            <form class="btn-form" action="/remove-from-cart" method="post">
+                                <input type="hidden" name="_id" value="{{ _id }}">
+                                <button class="btn btn-danger">Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <div class="actions">
+            <button class="btn btn-primary" id="stripe-checkout">Checkout</button>
+        </div>
+    {{else}}
+        <div class="cart-empty-notice">
+            <img class="cart-empty-notice-image" src="/no-items-why.jpg" alt="Why you no items">
+            <p class="cart-empty-notice-text">
+                Your cart has no items
+            </p>
+        </div>
+    {{/if}}
+</main>
