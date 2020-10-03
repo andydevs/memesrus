@@ -23,15 +23,6 @@ the time to actually integrate S3 fully.
 Backlog
 --------------------------------------------------------------------------
 
-- [x] Move keys to environment! (10 - 2 - 2020)
-
-- [x] Checkout System (10 - 2 - 2020)
-    - [x] Implement checkout post (10 - 2 - 2020)
-    - [x] Implement stripe checkout (10 - 2 - 2020)
-    - [x] Adjust domain based on environment (10 - 2 - 2020)
-    - [x] Create order confirmation url (10 - 2 - 2020)
-    - [x] Create cancel url (10 - 2 - 2020)
-
 - [ ] Actually download the memes
     - [x] Get urls from checkout session (10 - 2 - 2020)
     - [x] Send zip file (10 - 2 - 2020)
@@ -68,6 +59,17 @@ Updates
 
 Changelog
 --------------------------------------------------------------------------
+
+### v0.3.0
+
+- [x] Checkout System (10 - 2 - 2020)
+    - [x] Implement checkout post (10 - 2 - 2020)
+    - [x] Implement stripe checkout (10 - 2 - 2020)
+    - [x] Adjust domain based on environment (10 - 2 - 2020)
+    - [x] Create order confirmation url (10 - 2 - 2020)
+    - [x] Create cancel url (10 - 2 - 2020)
+
+- [x] Move keys to environment! (10 - 2 - 2020)
 
 ### v0.2.0
 
